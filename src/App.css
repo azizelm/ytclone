@@ -1,0 +1,108 @@
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé de couleur */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Conteneur principal */
+#root {
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Fond translucide */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Zone de vidéo sélectionnée */
+.selected-video {
+  padding: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.selected-video h2 {
+  font-size: 1.8em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.selected-video iframe {
+  width: 90%; /* Rend la vidéo plus grande */
+  height: 500px; /* Augmente la hauteur */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Liste des vidéos */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px;
+}
+
+li {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Image des miniatures */
+li img {
+  width: 150px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Titre et description des vidéos */
+li div {
+  flex-grow: 1;
+}
+
+li h3 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+li p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #dcdcdc;
+  line-height: 1.4;
+}
